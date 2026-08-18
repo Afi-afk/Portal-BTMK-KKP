@@ -1,0 +1,255 @@
+/* ==========================================================================
+   PORTAL BTMK & KKP - MAIN STYLESHEET
+   ========================================================================== */
+
+:root {
+    --primary-blue: #002B49;
+    --primary-dark: #001A2D;
+    --accent-gold: #D4AF37;
+    --accent-gold-hover: #F1C40F;
+    --bg-light: #F4F6F9;
+    --card-bg: #FFFFFF;
+    --text-color: #333333;
+    --text-muted: #666666;
+    --border-color: #E2E8F0;
+    --danger-red: #D9534F;
+    --success-green: #059669;
+    --warning-orange: #D97706;
+}
+
+/* Base resets & typography */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   HERO BANNER - MENARA TUN MUSTAPHA BACKGROUND
+   ========================================================================== */
+
+
+
+/* ==========================================================================
+   LAYOUT CONTAINERS & HEADINGS
+   ========================================================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    color: var(--primary-blue);
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--accent-gold);
+    padding-left: 10px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   QUICK LINKS GRID
+   ========================================================================== */
+
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2.5rem;
+}
+
+.quick-link-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+}
+
+.quick-link-card:hover {
+    border-color: var(--primary-blue);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.quick-link-icon {
+    font-size: 1.8rem;
+    background: #F1F5F9;
+    padding: 0.5rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-link-text h4 {
+    margin: 0;
+    color: var(--primary-blue);
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.quick-link-text p {
+    margin: 2px 0 0 0;
+    font-size: 0.78rem;
+    color: var(--text-muted);
+}
+
+/* ==========================================================================
+   DEPARTMENT CARDS (BTMK & KKP)
+   ========================================================================== */
+
+.dept-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.dept-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.8rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--primary-blue);
+    transition: transform 0.2s ease;
+}
+
+.dept-card:hover {
+    transform: translateY(-4px);
+}
+
+.dept-card.kkp {
+    border-top-color: var(--accent-gold);
+}
+
+.dept-card h2 {
+    margin-top: 0;
+    color: var(--primary-blue);
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dept-card ul {
+    padding-left: 1.2rem;
+    color: #555555;
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
+/* ==========================================================================
+   ANNOUNCEMENTS & SEARCH
+   ========================================================================== */
+
+.search-box {
+    margin-bottom: 1rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.search-box input:focus {
+    border-color: var(--primary-blue);
+    box-shadow: 0 0 0 3px rgba(0, 43, 73, 0.1);
+}
+
+.announcement-box {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2.5rem;
+}
+
+.announcement-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 0.4rem;
+}
+
+.badge-btmk { background-color: var(--primary-blue); }
+.badge-kkp { background-color: var(--warning-orange); }
+.badge-public { background-color: var(--success-green); }
+
+.announcement-title {
+    font-weight: bold;
+    color: #222222;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.announcement-date {
+    font-size: 0.8rem;
+    color: #888888;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+    background-color: var(--primary-blue);
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+    border-top: 4px solid var(--accent-gold);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 3rem 1rem;
+        min-height: 320px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .hero-crests img {
+        height: 48px;
+    }
+}
