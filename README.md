@@ -12,7 +12,8 @@ A role-based management portal with dual authentication (Admin/Staff), customize
 * The database file/schema is located in the `/db` folder.
 * Refer to `/db` for initial setup scripts and migration files.
 
-* ## Optional (Guna XAMPP)
+
+## Optional (Guna XAMPP)
 
 ### Step 1: Download Code
 1. Klik butang hijau **`< Code >`** dkat atas, lepas tu tekan **Download ZIP**.
