@@ -11,6 +11,7 @@ A role-based management portal with dual authentication (Admin/Staff), customize
 ## Project Structure & Database
 * The database file/schema is located in the `/db` folder.
 * Refer to `/db` for initial setup scripts and migration files.
+* Password 4 admin/staf1 :password123
 
 
 ## Optional (Guna XAMPP)
